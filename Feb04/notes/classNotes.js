@@ -22,3 +22,6 @@ var myBool = true;
 // bool is lowercase
 
 var javaScriptWeWriteCamelCase = 0;
+var thisString = "daniela"
+
+console.log(thisString.length)

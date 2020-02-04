@@ -13,3 +13,6 @@ multi line
 string 
 yeeyeyeyeye
 `
+var newString = "hello" + " " + "world"
+
+// its the same concatenaton but js needs var keyword to declare 

@@ -7,3 +7,9 @@ function myFunction() {
 }
 
 console.log("hello world")
+
+var myString = `
+multi line 
+string 
+yeeyeyeyeye
+`

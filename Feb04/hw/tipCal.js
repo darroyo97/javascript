@@ -2,6 +2,7 @@ function tipCalc(amount, serviceLevel) {
     amount = amount
     if (serviceLevel == "bad") {
         tip = amount * 0.20
+        // return tip
         total = tip + amount
         return total
     } else if (serviceLevel == "fair") {

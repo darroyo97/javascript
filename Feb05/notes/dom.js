@@ -18,6 +18,11 @@ console.log(src)
 
 var divArray = document.getElementsByClassName('hello')
 console.log(divArray)
+console.log(divArray.length)
 var firstDiv = divArray[0]
 console.log(firstDiv)
 divArray[0].textContent = "good morning"
+divArray[1].innerHTML = "<b>zip ti py do da</b>"
+
+//
+

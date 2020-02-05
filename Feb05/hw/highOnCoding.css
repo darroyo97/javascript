@@ -1,0 +1,20 @@
+.navbar {
+    background-color:rgb(105, 205, 238) !important;
+    height: 100px;
+}
+.navbar-brand, .nav-item {
+    color: white;
+}
+.grey-bc {
+    background-color: rgb(214, 211, 211);
+}
+.section {
+    background-color: orange;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h2 {
+    color: rgb(63, 188, 230);
+}

@@ -42,4 +42,48 @@
 
 //
 
+// var element = document.createElement("h1");
 
+// element.textContent = "hello world";
+
+// var body = document.querySelector("body");
+
+// body.append(element);
+
+//my solution always to pick what div
+// var element = document.createElement("h1");
+// element.textContent = "hello world"
+// var divArray = document.getElementsByClassName("hello")
+// var firstDiv = divArray[0]
+// firstDiv.append(element)
+
+
+//v's solution just goes to first one it finds bcus using query selector
+// var element = document.createElement("h1");
+// element.textContent = "hello world"
+// var helloDiv = document.querySelector(".hello")
+// helloDiv.append(element)
+
+
+// or we can use queryselcAll
+// var element = document.createElement("h1");
+// element.textContent = "digital  crafts"
+// var helloDiv = document.querySelectorAll(".hello")
+// helloDiv[1].append(element)
+
+// 
+
+// testing if i can append all
+// var element = document.createElement("h1");
+// element.textContent = "digital  crafts"
+// var helloDiv = document.querySelectorAll(".hello")
+// helloDiv.append(element)
+//doesnt work^^^
+
+
+//
+
+
+//remove
+var divNode = document.getElementById("myFirstId")
+document.body.removeChild(divNode)

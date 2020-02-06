@@ -15,8 +15,12 @@
 
     <script>
         let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-
-        var li1 = document.createElement('li')
+        var ul = document.querySelector('ul')
+        days.forEach(function (element) {
+            var li = document.createElement("li")
+            li.textContent = element
+            ul.append(li)
+        })
 
     </script>
 </body>

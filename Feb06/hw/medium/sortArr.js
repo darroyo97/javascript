@@ -4,8 +4,3 @@
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
 console.log(fruits)
-
-// var sortFruits = fruits.map(function (name) {
-//     return fruits.sort()
-// })
-// console.log(sortFruits)

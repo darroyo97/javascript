@@ -45,21 +45,23 @@ var b = 10
 // }
 
 
-var x = 1;
-if (x === 1) {
-    let x = 2;
-    console.log("inside of", x);
-    // expected output: 2
-}
+// var x = 1;
+// if (x === 1) {
+//     let x = 2;
+//     console.log("inside of", x);
+//     // expected output: 2
+// }
 
-function test() {
-    var x = 3
-    return x
-}
+// function test() {
+//     var x = 3
+//     return x
+// }
 
-// x = test()
-test()
-console.log("outside of", x);
+// // x = test()
+// test()
+// console.log("outside of", x);
 // expected output: 1
 
 //let releases value only uses once
+
+const x = 3

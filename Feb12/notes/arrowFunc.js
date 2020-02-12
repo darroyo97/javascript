@@ -11,7 +11,7 @@
 
 // they are the same ^^^ how to re write function in to arrow function *** EXAMPLE***
 
-//short cut let met
+// short cut let met
 // let methodName = (params) => {
 
 // }
@@ -21,13 +21,13 @@
 // }, 2000)
 // console.log('first')
 
-//hello world prints until 2 seconds
+// hello world prints until 2 seconds
 
 // function getType() {
 //     console.log('Type is: ' + this.type)
 // }
 
-//default parameters
+// default parameters
 
 // let nums = [1, 2, 3, 4, 5]
 // // let newArray = nums.map(function (num) {
@@ -39,9 +39,9 @@
 // })
 // console.log(newArray)
 
-//same thing but has arrow function//   EXAMPLE*****^^^
+// same thing but has arrow function//   EXAMPLE*****^^^
 
-///
+// /
 
 // let arr = [1, -1, 2, -2, 3, -3]
 // let newArray = arr.filter((element) => {
@@ -54,14 +54,14 @@
 
 // console.log(newArr)
 
-//////
+// ////
 
 // let obj = {
 //     x: 5,
 //     y: 20,
 //     z: 3
 // }
-//create func called mult
+// create func called mult
 // let mult = ((object) => {
 //     return object.x * object.y * object.z
 // })
@@ -87,7 +87,7 @@
 // //     ///something something
 // // })
 
-//EXAMPLE ****************^^^^ OF SAME REWRITTEN TO ARROW
+// EXAMPLE ****************^^^^ OF SAME REWRITTEN TO ARROW
 
 // let addTwoNums = (a, b) => {
 //     a = a || 0;
@@ -107,15 +107,15 @@
 // }
 // multNums(4, 6, 5, 7)
 
-//es5 rest paramaters
+// es5 rest paramaters
 // function logArguments() {
 //     for (var i = 0; i < arguments.length; i++) {
 //         console.log(arguments[i]);
 //     }
 // }
 // logArguments(3, 4, 5, 6, 7)
-///
-///es6 rest parameters
+// /
+// /es6 rest parameters
 // function logArguments(...args) {
 //     for (let arg of args) {
 //         console.log(arg);
@@ -131,3 +131,72 @@
 // }
 
 // multNums(2, 3, 4)
+
+// let a = 3;
+// // if (a == 4) {
+// //     console.log(`a is equal to 4`)
+// // }
+// // else {
+// //     console.log(`a is not equal to 4`)
+// // }
+// (a == 4) ? console.log(`a is equal to 4`) : console.log(`a is not equal to 4`)
+
+// //same 
+// //(condition)? (true block):(else block)
+
+// class Person {
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+//     greeting() {
+//         console.log(`Hello ${this.firstName} ${this.lastName} !`)
+
+//         this.count = this.count + 1
+//     }
+//     printCount() {
+//         console.log(this.count)
+//     }
+
+// }
+// let alina = new Person("alina", "belova", 21);
+// // console.log(alina);
+// // console.log(alina.age)
+
+// alina.greeting()
+// alina.greeting()
+// alina.printCount()
+
+
+
+
+class Character {
+    constructor(health, power) {
+        this.health = health;
+        this.power = power;
+    }
+    attack = (enemy) => {
+        enemy.health -= this.power;
+    }
+    print = () => {
+        console.log(`The health of ${this.name} is ${this.health} and power is ${this.power}`);
+    }
+}
+class Hero extends Character {
+    constructor(health, power) {
+        super(health, power);
+        this.name = "hero";
+    }
+}
+class Goblin extends Character {
+    constructor(health, power) {
+        super(health, power);
+        this.name = "goblin";
+    }
+}
+let hero = new Hero(10, 4);
+let goblin = new Goblin(8, 5);
+
+hero.attack(goblin);
+hero.print();

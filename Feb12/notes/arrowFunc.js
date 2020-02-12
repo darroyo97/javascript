@@ -200,3 +200,4 @@ let goblin = new Goblin(8, 5);
 
 hero.attack(goblin);
 hero.print();
+goblin.print()

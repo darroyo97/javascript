@@ -37,6 +37,10 @@
 
 let luke = { occupation: 'jedi', father: 'anakin' }
 //dot . and [] are the same
-let job = luke[occupation]
-let father = luke.father
+// let job = luke[occupation]
+// let father = luke.father
 
+let { occupation, father } = luke;
+// another way to get values ^^
+console.log(occupation)
+console.log(father)

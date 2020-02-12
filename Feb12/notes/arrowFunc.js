@@ -68,7 +68,7 @@ let obj = {
 // console.log(mult(obj));
 
 let mult = ((object) => {
-    let { x, y, z } = obj
+    let { x, y, z } = object
     return x * y * z
 })
 console.log(mult(obj));

@@ -9,19 +9,19 @@ $(() => {
     // $('div').html('Hello Cruel World')
     // $('div').html("<h1 style='color:pink; font-size: 30px; background-color:grey;'>Hello Cruel World</h1>")
     // // console.log(result)
-    let $anchor = $('<a>', {
-        'class': 'nav-item',
-        'text': 'Digital Crafts',
-        'href': 'https://www.digitalcrafts.com/'
-    });
-    $('div').append($anchor)
-    let $br = $('<br>')
-    $('div').append($br)
-    let $img = $('<img>', {
-        'src': 'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/09/931/524/Rabbits_iStock.jpg?ve=1&tl=1',
-        'alt': 'this is an image of bunnies'
-    })
-    $('div').append($img)
+    // let $anchor = $('<a>', {
+    //     'class': 'nav-item',
+    //     'text': 'Digital Crafts',
+    //     'href': 'https://www.digitalcrafts.com/'
+    // });
+    // $('div').append($anchor)
+    // let $br = $('<br>')
+    // $('div').append($br)
+    // let $img = $('<img>', {
+    //     'src': 'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/09/931/524/Rabbits_iStock.jpg?ve=1&tl=1',
+    //     'alt': 'this is an image of bunnies'
+    // })
+    // $('div').append($img)
     // remove class
     // $('p').removeClass('myImage')
     // $('p').click(() => {
@@ -36,10 +36,24 @@ $(() => {
     // $('body').keyup((e) => {
     //     console.log(`Key Up: ${e.keyCode}`)
     // })
-    let $inputCount = $('input')
-    $('input').keyup((e) => {
-        console.log($inputCount.val().length)
-        $('#count').html($inputCount.val().length)
+    // let $inputCount = $('input')
+    // $('input').keyup((e) => {
+    //     console.log($inputCount.val().length)
+    //     $('#count').html($inputCount.val().length)
+    // })
+    // $('#aButton').click((e) => {
+    //     $('textarea').hide()
+    // })
+    // $('#anotherButton').click((e) => {
+    //     $('textarea').show()
+    // })
+    // $('#toggleButton').click((e) => {
+    //     $('textarea').toggle()
+    // })
+    $('#magicButton').click(() => {
+        // $('.animation').slideDown(2000);
+        $('.animation').fadeToggle(2000);
+        // $('.animation').fadeOut(3000).fadeToggle(3000).;
     })
 
 

@@ -1,10 +1,13 @@
 $(() => {
-    $('#myForm').submit((e) => {
-        e.preventDefault();
-        console.log($('input:checked').val())
-        let result = $('#hi').is(':checked');
-        console.log(result)
+    $('#nameInput').change(function () {
+        console.log('changed and exited')
     })
+    // $('#myForm').submit((e) => {
+    //     e.preventDefault();
+    //     console.log($('input:checked').val())
+    //     let result = $('#hi').is(':checked');
+    //     console.log(result)
+    // })
 
     // $('#hi').input(() => {
 

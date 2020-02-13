@@ -1,8 +1,20 @@
 $(() => {
     $('#myForm').submit((e) => {
-        e.preventDefault()
-        alert('form was sumbited')
+        e.preventDefault();
+        console.log($('input:checked').val())
+        let result = $('#hi').is(':checked');
+        console.log(result)
     })
+
+    // $('#hi').input(() => {
+
+    // })
+
+
+    // $('#myForm').submit((e) => {
+    //     e.preventDefault()
+    //     alert('form was sumbited')
+    // })
 })
 // let myFunction = () => {
 //     alert('form sumbitted')

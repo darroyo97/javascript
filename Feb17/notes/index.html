@@ -9,15 +9,20 @@
 
 <body>
     Hello World
+    <ul>
 
+    </ul>
     <script>
-        fetch('https://jsonplaceholder.typicode.com/todos/1')
+        fetch('http://jsonplaceholder.typicode.com/todos')
             // console.log(response)
             .then((response) => {
                 return response.json();
             })
-            .then((jsonObj) => {
-                console.log(jsonObj)
+            .then((jsonArr) => {
+                console.log(jsonArr)
+                jsonArr.forEach((todoObj) => {
+                    console.log(todoObj.title)
+                })
             })
         // console.log('comment 1')
 
@@ -32,3 +37,8 @@
 </body>
 
 </html>
+<!-- let newArray = jsonArr.map((todoObj) => {
+    let ulNode = document.getElementsByTagName('ul')
+    let liNode = document.createElement('ul')
+    liNode.innerText = todoObj
+}) -->

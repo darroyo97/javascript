@@ -9,18 +9,26 @@
 
 <body>
     Hello World
+    <ul>
+
+    </ul>
     <script>
         fetch('https://jsonplaceholder.typicode.com/comments')
             .then((response) => {
                 return response.json();
             })
             .then((jsonArr) => {
-                console.log(jsonArr)
-                jsonArr.forEach((commentObj) => {
-                    console.log(commentObj.email)
+                let liArray = jsonArr.map((commentObj) => {
+                    return `<li>${commentObj.email}</li>`
                 })
+                let ulNode = document.getElementsByTagName('ul')
+                ulNode.innerHTML = liArray.join('')
             })
     </script>
 </body>
 
 </html>
+<!-- console.log(jsonArr)
+jsonArr.forEach((commentObj) => {
+    console.log(commentObj.email)
+}) -->

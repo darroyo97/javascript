@@ -11,7 +11,8 @@ function myFunc() {
             return response.json();
         })
         .then((weatherObj) => {
-            // console.log(weatherObj.main.temp)
+            console.log(weatherObj.main.temp)
+            console.log(weatherObj.weather)
             let celsius = weatherObj.main.temp - 273.15
             // console.log(celsius)
             let degCRound = Math.floor(celsius)
@@ -19,7 +20,7 @@ function myFunc() {
             let degF = degCRound * 1.8 + 32;
             // console.log(degF)
             let degFRound = Math.floor(degF)
-            console.log(degFRound)
+            // console.log(degFRound)
             let answer = document.querySelector('#tempResult');
             answer.innerHTML = degFRound.toString() + " F"
         })

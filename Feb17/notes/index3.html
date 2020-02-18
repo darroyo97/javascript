@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+</head>
+
+<body>
+    <!-- <div>The temp in this city is...</div> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=Houston&APPID=9cd5ceea03f0af9dfe6cda9fc0684c66`
+        fetch(url)
+            .then((response) => {
+                return response.json();
+            })
+            .then((weatherObj) => {
+                // console.log(weatherObj.main.temp)
+                let celsius = weatherObj.main.temp - 273.15
+                // console.log(celsius)
+                let degCRound = Math.floor(celsius)
+                // console.log(degCRound)
+                let degF = degCRound * 1.8 + 32;
+                // console.log(degF)
+                let degFRound = Math.floor(degF)
+                console.log(degFRound)
+                let body = document.querySelector('body');
+                body.innerHTML = degFRound.toString()
+
+            })
+    </script>
+</body>
+
+</html>
+<!-- apikey  -->
+<!-- 9cd5ceea03f0af9dfe6cda9fc0684c66 -->
+<!-- api.openweathermap.org/data/2.5/forecast?id=4699066&APPID=9cd5ceea03f0af9dfe6cda9fc0684c66 -->

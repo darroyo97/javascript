@@ -22,7 +22,11 @@ function myFunc() {
             console.log(degFRound)
             let answer = document.querySelector('#tempResult');
             answer.innerHTML = degFRound.toString()
-
+        })
+        .catch((error) => {
+            console.log(error)
+            let answer = document.querySelector('#tempResult');
+            answer.innerHTML = "CITY NOT FOUND PLEASE CHECK SPELLING"
         })
 
 }

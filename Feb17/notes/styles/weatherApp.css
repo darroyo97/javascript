@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: #00294B;
+}
+
+.main_container {
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    border: 10px double #0B5351;
+    padding: 10px;
+    background-color: #FFF1BE;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    color: #EDDEA4;
+    text-decoration: underline;
+}
+
+.img-resize {
+    width: 100%;
+    height: 25vw;
+}
+
+.text-style {
+    color: #155E5A;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+p1 {
+    color: #0077B8;
+    font-size: 25px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: #F7A072;
+    color: #0077B8;
+    border-radius: 25px;
+}

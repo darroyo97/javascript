@@ -2,7 +2,7 @@
 function myFunc() {
     let variable = document.getElementById('input_id').value;
     let userCity = document.getElementById('nameCity')
-    userCity.innerHTML = 'The city you picked is : ' + variable;
+    userCity.innerHTML = variable;
     console.log(variable)
     var userUrl = `https://api.openweathermap.org/data/2.5/weather?q=` + variable + `&APPID=9cd5ceea03f0af9dfe6cda9fc0684c66`
     // console.log(userUrl)
@@ -21,14 +21,13 @@ function myFunc() {
             let degFRound = Math.floor(degF)
             console.log(degFRound)
             let answer = document.querySelector('#tempResult');
-            answer.innerHTML = degFRound.toString()
+            answer.innerHTML = degFRound.toString() + " F"
         })
         .catch((error) => {
             console.log(error)
             let answer = document.querySelector('#tempResult');
             answer.innerHTML = "CITY NOT FOUND PLEASE CHECK SPELLING"
         })
-
 }
 
 // console.log(variable)

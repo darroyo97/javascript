@@ -9,13 +9,21 @@
 </head>
 
 <body>
-    <form action="">
-        <h1>Name of City: </h1>
-        <input type="text" id="input_id">
-        <input type="button" value="Submit" onclick="myFunc()">
-        <div id="nameCity" style="color: red"></div>
-    </form>
-    <div id="tempResult"></div>
+    <img class="img-resize" src="https://www.starfm.co.ke/wp-content/uploads/2019/12/new-history-forecast-bulk.png"
+        alt="">
+    <div class="title">
+        <h1> Dani's Weather App</h1>
+    </div>
+    <div class="main_container">
+        <form action="">
+            <p1>Name of City: </p1>
+            <br>
+            <input type="text" id="input_id">
+            <input class="button" type="button" value="Submit" onclick="myFunc()">
+            <div id="nameCity" class="text-style"></div>
+        </form>
+        <div id="tempResult" class="text-style"></div>
+    </div>
     <!-- <div>The temp in this city is...</div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
